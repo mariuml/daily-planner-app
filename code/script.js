@@ -2,6 +2,12 @@
 var textArea = $(".large-row");
 var scheduleHour = $(".hour");
 
+
+// Save Button variables
+var nineAmSavebtn = $("#nine-am-savebtn");
+
+
+
 // Creating a variable containing the current hour 
 var today = moment();
 var currentHour = today.format("HH");
@@ -18,7 +24,7 @@ var threePm = ((parseInt($("#three-pm").text())) + 12);
 var fourPm = ((parseInt($("#four-pm").text())) +12);
 var fivePm = ((parseInt($("#five-pm").text())) + 12);
 
-console.log(currentHour);
+
 
 // Timeblock textarea variables
 var nineAmTextarea = $("#nine-am-textarea");
@@ -30,6 +36,8 @@ var twoPmTextarea = $("#two-pm-textarea");
 var threePmTextarea = $("#three-pm-textarea");
 var fourPmTextarea = $("#four-pm-textarea");
 var fivePmTextarea = $("#five-pm-textarea");
+
+// Variables to display saved text
 
 
 //  Display current day 
@@ -69,3 +77,25 @@ compareTime(twoPm,twoPmTextarea);
 compareTime(threePm,threePmTextarea);
 compareTime(fourPm, fourPmTextarea);
 compareTime(fivePm, fivePmTextarea);
+
+// FUNCTION: Writing individual functions for each button to save and display on the screen
+
+// 9am
+nineAmSavebtn.on('click', function() {
+  
+    // Saving input value to a variable
+    var savedWorkEvent  = $("#nine-am-input").val();
+
+    // Save variable in a key to local storage 
+localStorage.setItem("nineAm", savedWorkEvent);
+
+// Resave local storage into variable
+
+
+    // Get item from local storage and display on the page (should hold on refresh like w highscores)
+
+
+})
+
+
+
