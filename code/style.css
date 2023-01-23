@@ -74,3 +74,20 @@ textarea {
 .list-group-item{
   height: 125px;
 }
+
+.save-row{
+  width: 10%;
+background-color: #06aed5;
+border-bottom-right-radius: 15px;
+
+}
+
+.large-row {
+  width: 90%;
+
+}
+
+.save-icon {
+  width: 104.13px;
+  height: 125px;
+}
