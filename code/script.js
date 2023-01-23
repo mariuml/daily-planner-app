@@ -4,20 +4,21 @@ var scheduleHour = $(".hour");
 
 // Creating a variable containing the current hour 
 var today = moment();
-var currentHour = today.format("ha");
+var currentHour = today.format("HH");
 
 // Timeblock variable string to compare
 
-var nineAm = $("#nine-am").text();
-var tenAm = $("#ten-am").text();
-var elevenAm = $("#eleven-am").text();
-var twelvePm = $("#twelve-pm").text();
-var onePm = $("#one-pm").text();
-var twoPm = $("#two-pm").text();
-var threePm = $("#three-pm").text();
-var fourPm = $("#four-pm").text();
-var fivePm = $("#five-pm").text();
+var nineAm = parseInt($("#nine-am").text());
+var tenAm = parseInt($("#ten-am").text());
+var elevenAm = parseInt($("#eleven-am").text());
+var twelvePm = parseInt($("#twelve-pm").text());
+var onePm = ((parseInt($("#one-pm").text())) + 12);
+var twoPm = ((parseInt($("#two-pm").text())) + 12);
+var threePm = ((parseInt($("#three-pm").text())) + 12);
+var fourPm = ((parseInt($("#four-pm").text())) +12);
+var fivePm = ((parseInt($("#five-pm").text())) + 12);
 
+console.log(currentHour);
 
 // Timeblock textarea variables
 var nineAmTextarea = $("#nine-am-textarea");
@@ -68,4 +69,3 @@ compareTime(twoPm,twoPmTextarea);
 compareTime(threePm,threePmTextarea);
 compareTime(fourPm, fourPmTextarea);
 compareTime(fivePm, fivePmTextarea);
-
