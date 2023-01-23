@@ -91,7 +91,97 @@ localStorage.setItem("nineAm", savedWorkEvent);
 
 })
 
-// 
+// 10am
 
+$("#ten-am-savebtn").on('click', function() {
+  
+    // Saving input value to a variable
+    var savedWorkEvent  = $("#ten-am-textarea .textarea").val();
 
+    // Save variable in a key to local storage 
+localStorage.setItem("tenAm", savedWorkEvent);
 
+})
+
+// 11am
+
+$("#eleven-am-savebtn").on('click', function() {
+  
+    // Saving input value to a variable
+    var savedWorkEvent  = $("#eleven-am-textarea .textarea").val();
+
+    // Save variable in a key to local storage 
+localStorage.setItem("elevenAm", savedWorkEvent);
+
+})
+
+// 12pm
+$("#twelve-pm-savebtn").on('click', function() {
+  
+    // Saving input value to a variable
+    var savedWorkEvent  = $("#twelve-pm-textarea .textarea").val();
+
+    // Save variable in a key to local storage 
+localStorage.setItem("twelvePm", savedWorkEvent);
+
+})
+
+// 1pm
+
+$("#one-pm-savebtn").on('click', function() {
+  
+    // Saving input value to a variable
+    var savedWorkEvent  = $("#one-pm-textarea .textarea").val();
+
+    // Save variable in a key to local storage 
+localStorage.setItem("onePm", savedWorkEvent);
+
+})
+
+// 2pm
+
+$("#two-pm-savebtn").on('click', function() {
+  
+    // Saving input value to a variable
+    var savedWorkEvent  = $("#two-pm-textarea .textarea").val();
+
+    // Save variable in a key to local storage 
+localStorage.setItem("twoPm", savedWorkEvent);
+
+})
+
+// 3pm
+
+$("#three-pm-savebtn").on('click', function() {
+  
+    // Saving input value to a variable
+    var savedWorkEvent  = $("#three-pm-textarea .textarea").val();
+
+    // Save variable in a key to local storage 
+localStorage.setItem("threePm", savedWorkEvent);
+
+})
+
+// 4pm
+
+$("#four-pm-savebtn").on('click', function() {
+  
+    // Saving input value to a variable
+    var savedWorkEvent  = $("#four-pm-textarea .textarea").val();
+
+    // Save variable in a key to local storage 
+localStorage.setItem("fourPm", savedWorkEvent);
+
+})
+
+// 5pm
+
+$("#five-pm-savebtn").on('click', function() {
+  
+    // Saving input value to a variable
+    var savedWorkEvent  = $("#five-pm-textarea .textarea").val();
+
+    // Save variable in a key to local storage 
+localStorage.setItem("fivePm", savedWorkEvent);
+
+})
