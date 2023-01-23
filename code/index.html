@@ -18,51 +18,53 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead description">A simple calendar app for scheduling your work day</p>
+      <p class="lead description">
+        A simple calendar app for scheduling your work day
+      </p>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-     
       <!-- Timeblocks: 9am -5pm -->
 
       <ul class="list-group list-group-horizontal-sm time-block">
-        <li class="list-group-item small-row hour" id="nine-am">9am </li>
+        <li class="list-group-item small-row hour" id="nine-am">9am</li>
         <li class="list-group-item large-row" id="nine-am-textarea">
-<input type="text" class="textarea" id="nine-am-input"> 
+          <input type="text" class="textarea"/>
         </li>
         <li class="list-group-item save-row">
           <button class="saveBtn" id="nine-am-savebtn">
-            <img src="assets/images/save-icon.png"> 
+            <img src="assets/images/save-icon.png" />
           </button>
-          
         </li>
       </ul>
 
       <ul class="list-group list-group-horizontal-sm time-block">
         <li class="list-group-item small-row hour" id="ten-am">10am</li>
         <li class="list-group-item large-row" id="ten-am-textarea">
-          <input type="text" class="textarea"> 
+          <input type="text" class="textarea" />
         </li>
-        <li class="list-group-item save-row"><button class="saveBtn">
-          <img src="assets/images/save-icon.png"> 
-        </button> </li>
+        <li class="list-group-item save-row">
+          <button class="saveBtn">
+            <img src="assets/images/save-icon.png" />
+          </button>
+        </li>
       </ul>
 
       <ul class="list-group list-group-horizontal-sm time-block">
         <li class="list-group-item small-row hour" id="eleven-am">11am</li>
         <li class="list-group-item large-row" id="eleven-am-textarea">
-          <input type="text" class="textarea"> 
+          <input type="text" class="textarea" />
         </li>
         <li class="list-group-item save-row">
           <button class="saveBtn">
-            <img src="assets/images/save-icon.png"> 
+            <img src="assets/images/save-icon.png" />
           </button>
         </li>
       </ul>
@@ -70,11 +72,11 @@
       <ul class="list-group list-group-horizontal-sm time-block">
         <li class="list-group-item small-row hour" id="twelve-pm">12pm</li>
         <li class="list-group-item large-row" id="twelve-pm-textarea">
-          <input type="text" class="textarea"> 
+          <input type="text" class="textarea" />
         </li>
         <li class="list-group-item save-row">
           <button class="saveBtn">
-            <img src="assets/images/save-icon.png"> 
+            <img src="assets/images/save-icon.png" />
           </button>
         </li>
       </ul>
@@ -82,11 +84,11 @@
       <ul class="list-group list-group-horizontal-sm time-block">
         <li class="list-group-item small-row hour" id="one-pm">1pm</li>
         <li class="list-group-item large-row" id="one-pm-textarea">
-          <input type="text" class="textarea"> 
+          <input type="text" class="textarea" />
         </li>
         <li class="list-group-item save-row">
           <button class="saveBtn">
-            <img src="assets/images/save-icon.png"> 
+            <img src="assets/images/save-icon.png" />
           </button>
         </li>
       </ul>
@@ -94,65 +96,56 @@
       <ul class="list-group list-group-horizontal-sm time-block">
         <li class="list-group-item small-row hour" id="two-pm">2pm</li>
         <li class="list-group-item large-row" id="two-pm-textarea">
-          <input type="text" class="textarea"> 
+          <input type="text" class="textarea" />
         </li>
         <li class="list-group-item save-row">
           <button class="saveBtn">
-            <img src="assets/images/save-icon.png"> 
+            <img src="assets/images/save-icon.png" />
           </button>
         </li>
       </ul>
-
 
       <ul class="list-group list-group-horizontal-sm time-block">
         <li class="list-group-item small-row hour" id="three-pm">3pm</li>
         <li class="list-group-item large-row" id="three-pm-textarea">
-          <input type="text" class="textarea" > 
+          <input type="text" class="textarea" />
         </li>
         <li class="list-group-item save-row">
           <button class="saveBtn">
-            <img src="assets/images/save-icon.png"> 
+            <img src="assets/images/save-icon.png" />
           </button>
         </li>
       </ul>
-
 
       <ul class="list-group list-group-horizontal-sm time-block">
         <li class="list-group-item small-row hour" id="four-pm">4pm</li>
         <li class="list-group-item large-row" id="four-pm-textarea">
-          <input type="text" class="textarea"> 
+          <input type="text" class="textarea" />
         </li>
         <li class="list-group-item save-row">
           <button class="saveBtn">
-            <img src="assets/images/save-icon.png"> 
+            <img src="assets/images/save-icon.png" />
           </button>
         </li>
       </ul>
-
 
       <ul class="list-group list-group-horizontal-sm time-block">
         <li class="list-group-item small-row hour" id="five-pm">5pm</li>
         <li class="list-group-item large-row" id="five-pm-textarea">
-          <input type="text" class="textarea"> 
+          <input type="text" class="textarea" />
         </li>
         <li class="list-group-item save-row">
           <button class="saveBtn">
-            <img src="assets/images/save-icon.png"> 
+            <img src="assets/images/save-icon.png" />
           </button>
         </li>
       </ul>
-
-
-
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    
-    
 
-    <script src="script.js"></script>
-    <script src="events.js"> </script>
-   
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/events.js"></script>
   </body>
 </html>

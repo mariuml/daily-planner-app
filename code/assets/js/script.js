@@ -84,18 +84,14 @@ compareTime(fivePm, fivePmTextarea);
 nineAmSavebtn.on('click', function() {
   
     // Saving input value to a variable
-    var savedWorkEvent  = $("#nine-am-input").val();
+    var savedWorkEvent  = $("#nine-am-textarea .textarea").val();
 
     // Save variable in a key to local storage 
 localStorage.setItem("nineAm", savedWorkEvent);
 
-// Resave local storage into variable
-
-
-    // Get item from local storage and display on the page (should hold on refresh like w highscores)
-
-
 })
+
+// 
 
 
 
