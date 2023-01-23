@@ -4,14 +4,16 @@ body {
   line-height: 1;
 }
 
-textarea {
+.textarea {
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+ 
 }
+
 
 .jumbotron {
   text-align: center;
@@ -29,12 +31,12 @@ textarea {
   text-align: center;
   border-radius: 15px;
 }
-
+/* 
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
-}
+} */
 
 .hour {
   background-color: #ffffff;
@@ -72,7 +74,8 @@ textarea {
 
 /* Scheduling blocks custom formatting */
 .list-group-item{
-  height: 125px;
+  height: 80px;
+
 }
 
 .save-row{
@@ -84,6 +87,11 @@ border-bottom-right-radius: 15px;
 
 .large-row {
   width: 90%;
+  text-align: left;
+  border: none;
+  white-space: pre-wrap;
+  border-top: 1px solid grey;
+  border-left: 1px black solid;
 
 }
 
