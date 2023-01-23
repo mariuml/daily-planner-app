@@ -1,4 +1,4 @@
-# daily-planner-app
+# Daily Planner App
 
 This app is a  a simple calendar application that allows a user to save events for each hour of the day by entering in tasks. This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery.
 
