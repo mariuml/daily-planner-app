@@ -78,6 +78,15 @@ compareTime(threePm,threePmTextarea);
 compareTime(fourPm, fourPmTextarea);
 compareTime(fivePm, fivePmTextarea);
 
+
+//FUNCTION: Display a message, item saved to local storage
+
+function saveMessage(){
+
+$("#saveMessage").text("Appointment added to local storage ✔");
+
+}
+
 // FUNCTION: Writing individual functions for each button to save and display on the screen
 
 // 9am
@@ -88,6 +97,9 @@ nineAmSavebtn.on('click', function() {
 
     // Save variable in a key to local storage 
 localStorage.setItem("nineAm", savedWorkEvent);
+
+saveMessage();
+
 
 })
 
@@ -101,6 +113,8 @@ $("#ten-am-savebtn").on('click', function() {
     // Save variable in a key to local storage 
 localStorage.setItem("tenAm", savedWorkEvent);
 
+saveMessage();
+
 })
 
 // 11am
@@ -113,6 +127,8 @@ $("#eleven-am-savebtn").on('click', function() {
     // Save variable in a key to local storage 
 localStorage.setItem("elevenAm", savedWorkEvent);
 
+saveMessage();
+
 })
 
 // 12pm
@@ -123,6 +139,8 @@ $("#twelve-pm-savebtn").on('click', function() {
 
     // Save variable in a key to local storage 
 localStorage.setItem("twelvePm", savedWorkEvent);
+
+saveMessage();
 
 })
 
@@ -135,6 +153,8 @@ $("#one-pm-savebtn").on('click', function() {
 
     // Save variable in a key to local storage 
 localStorage.setItem("onePm", savedWorkEvent);
+
+saveMessage();
 
 })
 
@@ -160,6 +180,9 @@ $("#three-pm-savebtn").on('click', function() {
     // Save variable in a key to local storage 
 localStorage.setItem("threePm", savedWorkEvent);
 
+saveMessage();
+
+
 })
 
 // 4pm
@@ -172,6 +195,9 @@ $("#four-pm-savebtn").on('click', function() {
     // Save variable in a key to local storage 
 localStorage.setItem("fourPm", savedWorkEvent);
 
+saveMessage();
+
+
 })
 
 // 5pm
@@ -183,5 +209,7 @@ $("#five-pm-savebtn").on('click', function() {
 
     // Save variable in a key to local storage 
 localStorage.setItem("fivePm", savedWorkEvent);
+
+saveMessage();
 
 })
