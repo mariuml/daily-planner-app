@@ -10,7 +10,7 @@ For this project I used leveraged my understanding of using third-party APIs, us
 
 ## Usage
 
-The landing page has been deployed at: 
+The landing page has been deployed at: https://mariuml.github.io/daily-planner-app/
 
 Please follow the link to view the final version. You can click the text blocks on the events and enter in your tasks to plan your work day. The events will be stored on the page of the day.
 
